@@ -32,8 +32,16 @@ h1, h2, h3, h4, h5, h6 {
 .social-icons a:hover {
     opacity: 0.7;
 }
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 800px;     /* set your preferred height here */
+  object-fit: cover; /* crop images nicely to fill the box */
+  border-radius: 30px;
+}
 </style>
 </head>
+
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -51,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px; min-width:500px; position: relative;" id="home">
-  <img class="w3-image" src="img/pixelcut-export.jpeg" alt="Hamburger Catering" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+  <img class="w3-image" src="img/jay4.jpg" alt="Hamburger Catering" style="width: 100%; height: auto; display: block; margin: 0 auto;">
   <h3 class="w3-xxlarge" style="position: absolute; bottom: 10px; right: 10px; font-size: clamp(1rem, 3vw, 3rem) !important; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
     Bamboo Thai Massage
   </h3>
@@ -67,11 +75,13 @@ h1, h2, h3, h4, h5, h6 {
     </div>
 
     <div class="w3-col m6 w3-padding-large">
-      <h2 class="w3-center">About Bamboo Thai Massage</h2><br>
+      <h2 class="w3-center">About us</h2><br>
       <h5 class="w3-center">Tradition since 2018</h5>
-      <p class="w3-large" style="text-align: justify;">Bamboo Thai Massage is rooted in over a decade of excellence, inspired by the founder's 15-year career in Thailand. We bring the rich tradition of Thai massage to England, seamlessly blending cultural heritage with modern relaxation. Our services include Traditional Thai Massage, Sports Massage, Oil Massage, and more, all provided by certified Thai therapists to ensure an authentic and professional experience. At the heart of Bamboo Thai Massage is our mission to deliver exceptional treatments with warm smiles, leaving every customer feeling refreshed and cared for. We carefully select premium oils and herbal products of the highest quality to enhance your well-being, while our tranquil space offers a soothing escape that connects you to <span class="w3-tag w3-light-grey" style="font-weight: bold;">The Traditions of Thai Culture.</span></p>
-      <p class="w3-large w3-text-grey w3-hide-medium" style="text-align: justify;">At Bamboo Thai Massage, we believe every individual deserves a tailored experience. Whether you seek relief from muscle tension, recovery from physical activity, or simply a moment of deep relaxation, our skilled therapists customize each session to your unique needs. Step into a sanctuary where your well-being is our priority, and leave feeling renewed in body and mind.</p>
+      <p class="w3-large" style="text-align: justify;">Bamboo Thai Massage has a rich tradition of excellence spanning over a decade. Established in 2018, our practice is rooted in the founder’s 15 years of experience in Thailand. We proudly bring the profound heritage of Thai massage to England, combining cultural traditions with modern relaxation techniques. Our extensive range of services includes Traditional Thai Massage, Sports Massage, Oil Massage, and more, all delivered by certified Thai therapists to ensure an authentic and professional experience. At Bamboo Thai Massage, we are dedicated to exceptional treatments, using carefully selected premium oils, baby oil for sensitive skin, and high-quality herbal products to promote your well-being. Our tranquil, nature-inspired ambiance creates a soothing escape, allowing you to feel truly relaxed, rejuvenated, and pampered.</p>
     </div>
+      <!-- <p class="w3-large" style="text-align: justify;">Bamboo Thai Massage is rooted in over a decade of excellence, inspired by the founder's 15-year career in Thailand. We bring the rich tradition of Thai massage to England, seamlessly blending cultural heritage with modern relaxation. Our services include Traditional Thai Massage, Sports Massage, Oil Massage, and more, all provided by certified Thai therapists to ensure an authentic and professional experience. At the heart of Bamboo Thai Massage is our mission to deliver exceptional treatments with warm smiles, leaving every customer feeling refreshed and cared for. We carefully select premium oils and herbal products of the highest quality to enhance your well-being, while our tranquil space offers a soothing escape that connects you to <span class="w3-tag w3-light-grey" style="font-weight: bold;">The Traditions of Thai Culture.</span></p>
+      <p class="w3-large w3-text-grey w3-hide-medium" style="text-align: justify;">At Bamboo Thai Massage, we believe every individual deserves a tailored experience. Whether you seek relief from muscle tension, recovery from physical activity, or simply a moment of deep relaxation, our skilled therapists customize each session to your unique needs. Step into a sanctuary where your well-being is our priority, and leave feeling renewed in body and mind.</p>
+    </div> -->
   </div>
   
   <hr>
@@ -79,31 +89,82 @@ h1, h2, h3, h4, h5, h6 {
   <!-- Menu Section -->
   <div class="w3-row w3-padding-64" id="menu">
     <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">Our Services</h1><br>
-      <h4>Traditional Thai Massage</h4>
-<p class="w3-text-grey">Experience the ancient art of healing with Traditional Thai Massage, combining acupressure, stretching, and energy balancing for deep relaxation and revitalization.</p>
+      <h1 class="w3-center">Our Services & Pricing</h1><br>
+      
 
-<h4>Sport Massage</h4>
-<p class="w3-text-grey">Designed for active individuals, Sport Massage focuses on muscle recovery, relieving tension, and improving flexibility to enhance your physical performance.</p>
+      <!-- <h4>Traditional Thai Massage</h4>
+      <div class="w3-panel w3-light-grey w3-round-large w3-padding" style="display: inline-block;">
+        30 Min : £30 | 60 Min : £50
+      </div>
+      <p class="w3-text-grey">Experience the ancient art of healing with Traditional Thai Massage, combining acupressure, stretching, and energy balancing for deep relaxation and revitalization.</p> -->
+      <div class="w3-row" style="align-items: center; display: flex; gap: 10px;">
+        <h4 style="margin: 0;">Traditional Thai</h4>
+        <div class="w3-light-grey w3-round-large w3-padding" style="display: inline-block;">
+          30 Min : £30 | 60 Min : £50
+        </div>
+      </div>
+      <p class="w3-text-grey">
+        Experience the ancient art of healing with Traditional Thai Massage, combining acupressure, stretching, and energy balancing for deep relaxation and revitalization.
+      </p>
 
-<h4>Head Massage</h4>
-<p class="w3-text-grey">Relax your mind and ease stress with our Head Massage, targeting pressure points to release tension and promote mental clarity.</p>
+      <div class="w3-row" style="align-items: center; display: flex; gap: 10px;">
+        <h4 style="margin: 0;">Sport Massage</h4>
+        <div class="w3-light-grey w3-round-large w3-padding" style="display: inline-block;">30 Min: £35 | 60 Min: £55</div>
+      </div>
+      <p class="w3-text-grey">
+        Designed for active individuals, Sport Massage focuses on muscle recovery, relieving tension, and improving flexibility to enhance your physical performance.
+      </p>
 
-<h4>Neck and Shoulders Massage</h4>
-<p class="w3-text-grey">Relieve stiffness and discomfort with our Neck and Shoulders Massage, perfect for reducing tension from desk work or daily stress.</p>
+      <div class="w3-row" style="align-items: center; display: flex; gap: 10px;">
+        <h4 style="margin: 0;">Head Massage</h4>
+        <div class="w3-light-grey w3-round-large w3-padding" style="display: inline-block;">30 Min: £30 | 60 Min: £50</div>
+      </div>
+      <p class="w3-text-grey">
+        Relax your mind and ease stress with our Head Massage, targeting pressure points to release tension and promote mental clarity.
+      </p>
 
-<h4>Foot Massage</h4>
-<p class="w3-text-grey">Pamper your feet with our Foot Massage, using reflexology techniques to improve circulation and restore balance to your body.</p>
+      <div class="w3-row" style="align-items: center; display: flex; gap: 10px;">
+        <h4 style="margin: 0;">Neck and Shoulders</h4>
+        <div class="w3-light-grey w3-round-large w3-padding" style="display: inline-block;">30 Min: £30 | 60 Min: £50</div>
+      </div>
+      <p class="w3-text-grey">
+        Relieve stiffness and discomfort with our Neck and Shoulders Massage, perfect for reducing tension from desk work or daily stress.
+      </p>
 
-<h4>Oil Massage</h4>
-<p class="w3-text-grey">Indulge in our soothing Oil Massage, combining gentle strokes and aromatic oils for a deeply relaxing and hydrating experience.</p>
-<h4>Thai with Oil Massage</h4>
-<p class="w3-text-grey">Enjoy the best of both worlds with our Thai with Oil Massage, blending traditional techniques with the calming benefits of essential oils.</p>    
+      <div class="w3-row" style="align-items: center; display: flex; gap: 10px;">
+        <h4 style="margin: 0;">Foot Massage</h4>
+        <div class="w3-light-grey w3-round-large w3-padding" style="display: inline-block;">30 Min: £30 | 60 Min: £50</div>
+      </div>
+      <p class="w3-text-grey">
+        Pamper your feet with our Foot Massage, using reflexology techniques to improve circulation and restore balance to your body.
+      </p>
+
+      <div class="w3-row" style="align-items: center; display: flex; gap: 10px;">
+        <h4 style="margin: 0;">Thai with Oil</h4>
+        <div class="w3-light-grey w3-round-large w3-padding" style="display: inline-block;">30 Min: £30 | 60 Min: £50</div>
+      </div>
+      <p class="w3-text-grey">
+        Enjoy the best of both worlds with our Thai with Oil Massage, blending traditional techniques with the calming benefits of essential oils.
+      </p>   
      
     </div>
     
-    <div class="w3-col l6 w3-padding-large">
+    <!-- <div class="w3-col l6 w3-padding-large">
       <img src="img\616344.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%; border-radius: 30px; margin-top: 50px;">
+    </div> -->
+    <div class="w3-col l6 w3-padding-large">
+      <div class="w3-content w3-display-container" style="max-width:100%; border-radius:30px; margin-top:50px;">
+        <img class="mySlides w3-round w3-image w3-opacity-min" src="img/jay.jpg" style="width:100%">
+        <img class="mySlides w3-round w3-image w3-opacity-min" src="img/jay2.jpg" style="width:100%">
+        <img class="mySlides w3-round w3-image w3-opacity-min" src="img/jay3.jpg" style="width:100%">
+        <img class="mySlides w3-round w3-image w3-opacity-min" src="img/616344.jpg" style="width:100%">
+        <img class="mySlides w3-round w3-image w3-opacity-min" src="img/616345.jpg" style="width:100%">
+        <img class="mySlides w3-round w3-image w3-opacity-min" src="img/616346.jpg" style="width:100%">
+        
+        
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)" style="border-radius:15px;">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)" style="border-radius:15px;">&#10095;</button>
+      </div>
     </div>
   </div>
 
@@ -152,5 +213,24 @@ h1, h2, h3, h4, h5, h6 {
   <p>Powered by <a href="" title="W3.CSS" target="_blank" class="w3-hover-text-green">Kim</a></p>
 </footer>
 
+<script>
+let slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  let i;
+  const x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
 </body>
 </html>
